@@ -1,0 +1,25 @@
+object Form2: TForm2
+  Left = 914
+  Height = 402
+  Top = 148
+  Width = 391
+  Caption = 'Form2'
+  ClientHeight = 402
+  ClientWidth = 391
+  LCLVersion = '1.2.2.0'
+  object TreeView1: TTreeView
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 402
+    Top = 0
+    Width = 391
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    DefaultItemHeight = 18
+    TabOrder = 0
+  end
+end

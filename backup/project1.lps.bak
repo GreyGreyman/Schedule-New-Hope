@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="18">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="20"/>
+        <UsageCount Value="206"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="main"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="61"/>
+        <CursorPos X="23" Y="66"/>
+        <UsageCount Value="206"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="references.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ReferenceForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="references"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="172"/>
+        <CursorPos X="51" Y="175"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="dbdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DBConnector"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="DBData"/>
+        <EditorIndex Value="8"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="23" Y="15"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="metadata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MetaData"/>
+        <EditorIndex Value="9"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="153"/>
+        <CursorPos X="13" Y="172"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="ueditcard.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CardForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ueditcard"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="36"/>
+        <CursorPos X="37" Y="50"/>
+        <UsageCount Value="244"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uschedule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ScheduleForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uschedule"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="716"/>
+        <CursorPos X="30" Y="739"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uquery.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UQuery"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="65"/>
+        <CursorPos X="32" Y="78"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="ufilters.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ufilters"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="155"/>
+        <CursorPos X="25" Y="167"/>
+        <UsageCount Value="216"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="uconflicts.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ConflictForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uconflicts"/>
+        <EditorIndex Value="6"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="30" Y="14"/>
+        <UsageCount Value="141"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="uavltree.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uavltree"/>
+        <EditorIndex Value="7"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3"/>
+        <CursorPos X="28" Y="24"/>
+        <UsageCount Value="81"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="filters.pas"/>
+        <UnitName Value="Filters"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="27"/>
+        <CursorPos X="24" Y="36"/>
+        <UsageCount Value="28"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\include\customcombobox.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="899"/>
+        <CursorPos X="1" Y="917"/>
+        <UsageCount Value="26"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\include\buttons.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="150"/>
+        <CursorPos X="1" Y="169"/>
+        <UsageCount Value="37"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="6265"/>
+        <CursorPos X="1" Y="6276"/>
+        <UsageCount Value="1"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2697"/>
+        <CursorPos X="1" Y="2711"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\sysutilh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="272"/>
+        <CursorPos X="13" Y="290"/>
+        <UsageCount Value="1"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\sysutils.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="147"/>
+        <CursorPos X="9" Y="151"/>
+        <UsageCount Value="1"/>
+      </Unit17>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="uschedule.pas"/>
+        <Caret Line="156" Column="42" TopLine="131"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uschedule.pas"/>
+        <Caret Line="157" Column="43" TopLine="137"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uschedule.pas"/>
+        <Caret Line="229" Column="22" TopLine="214"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uschedule.pas"/>
+        <Caret Line="159" Column="7" TopLine="149"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uschedule.pas"/>
+        <Caret Line="656" Column="21" TopLine="114"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uschedule.pas"/>
+        <Caret Line="654" Column="28" TopLine="640"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uschedule.pas"/>
+        <Caret Line="122" Column="6" TopLine="107"/>
+      </Position7>
+      <Position8>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="15" Column="9" TopLine="4"/>
+      </Position8>
+      <Position9>
+        <Filename Value="uconflicts.pas"/>
+        <Caret Line="13" Column="19" TopLine="1"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uconflicts.pas"/>
+        <Caret Line="26" Column="1" TopLine="3"/>
+      </Position10>
+      <Position11>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="25" Column="29" TopLine="1"/>
+      </Position11>
+      <Position12>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="171" Column="21" TopLine="160"/>
+      </Position12>
+      <Position13>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="166" Column="8" TopLine="150"/>
+      </Position13>
+      <Position14>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="12" Column="36" TopLine="1"/>
+      </Position14>
+      <Position15>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="165" Column="26" TopLine="155"/>
+      </Position15>
+      <Position16>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="28" Column="23" TopLine="15"/>
+      </Position16>
+      <Position17>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="189" Column="24" TopLine="174"/>
+      </Position17>
+      <Position18>
+        <Filename Value="metadata.pas"/>
+        <Caret Line="171" Column="19" TopLine="156"/>
+      </Position18>
+      <Position19>
+        <Filename Value="references.pas"/>
+        <Caret Line="68" Column="23" TopLine="60"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uavltree.pas"/>
+        <Caret Line="32" Column="13" TopLine="11"/>
+      </Position20>
+      <Position21>
+        <Filename Value="uavltree.pas"/>
+        <Caret Line="8" Column="26" TopLine="1"/>
+      </Position21>
+      <Position22>
+        <Filename Value="main.pas"/>
+        <Caret Line="111" Column="53" TopLine="84"/>
+      </Position22>
+      <Position23>
+        <Filename Value="main.pas"/>
+        <Caret Line="75" Column="1" TopLine="71"/>
+      </Position23>
+      <Position24>
+        <Filename Value="main.pas"/>
+        <Caret Line="45" Column="1" TopLine="31"/>
+      </Position24>
+      <Position25>
+        <Filename Value="main.pas"/>
+        <Caret Line="37" Column="11" TopLine="5"/>
+      </Position25>
+      <Position26>
+        <Filename Value="main.pas"/>
+        <Caret Line="69" Column="9" TopLine="54"/>
+      </Position26>
+      <Position27>
+        <Filename Value="main.pas"/>
+        <Caret Line="51" Column="15" TopLine="40"/>
+      </Position27>
+      <Position28>
+        <Filename Value="references.pas"/>
+        <Caret Line="227" Column="24" TopLine="79"/>
+      </Position28>
+      <Position29>
+        <Filename Value="references.pas"/>
+        <Caret Line="228" Column="24" TopLine="199"/>
+      </Position29>
+      <Position30>
+        <Filename Value="references.pas"/>
+        <Caret Line="227" Column="24" TopLine="198"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <EditorMacros Count="0"/>
+</CONFIG>
