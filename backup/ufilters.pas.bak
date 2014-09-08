@@ -90,7 +90,7 @@ begin
     Items.Add('>');
     TypeBox.Items.Add('<');
     TypeBox.Items.Add('=');
-    Items.Add('Содержит'); TypeBox.Items.Add('Начинается с');
+    Items.Add('содержит'); TypeBox.Items.Add('начинается с');
     ItemIndex := 0;
     Init(TypeBox, AOwner, Index, 100);
     OnChange := @OnFilterChange;
@@ -147,9 +147,9 @@ begin
   case FilterType of
     '<', '>', '=', '<>':
       Result := format(' %s %s :%s', [FieldName, FilterType, ParametrName]);
-    'Содержит':
+    'cодержит':
       Result := format(' position(:%s in %s) <> 0', [ParametrName, FieldName]);
-    'Начинается с':
+    'начинается с':
       Result := format(' position(:%s in %s) = 1', [ParametrName, FieldName]);
     else
       Result := '';
@@ -162,11 +162,15 @@ constructor TFilterPack.Create(X, Y: integer; AOwner: TWinControl; AFinalize: TF
 begin
   inherited create;
   Panel := TPanel.Create(AOwner);
-  Panel.Parent := AOwner;
-  Panel.Left:= X;
-  Panel.Top := Y;
-  Panel.Height := 410;
-  Panel.Width := 310;
+  with Panel do begin
+    Parent := AOwner;
+    BevelOuter := bvNone;
+    BorderStyle := bsSingle;
+    Left:= X;
+    Top := Y;
+    Height := 410;
+    Width := 310;
+  end;
 
   FieldLbl := TLabel.Create(Panel);
   InitCntrl(FieldLbl, 8, 60, 0, 0, Panel);
@@ -202,7 +206,7 @@ begin
   Image.ShowHint := true;
 
   FilterBox := TScrollBox.Create(AOwner);
-  InitCntrl(FilterBox, 5, 95, 300, 310, Panel);
+  InitCntrl(FilterBox, 2, 95, 300, 310, Panel);
   FilterBox.VertScrollBar.Tracking := True;
 end;
 
@@ -223,11 +227,13 @@ end;
 procedure TFilterPack.InitCntrl(AControl: TControl; ALeft, ATop, AWidth,
   AHeight: Integer; AParent: TWinControl);
 begin
-  AControl.Parent := AParent;
-  AControl.Left := ALeft;
-  AControl.Top := ATop;
-  AControl.Width := AWidth;
-  AControl.Height := AHeight;
+  with AControl do begin
+    Parent := AParent;
+    Left := ALeft;
+    Top := ATop;
+    Width := AWidth;
+    Height := AHeight;
+  end;
 end;
 
 procedure TFilterPack.SetImage(Applied: boolean);
@@ -253,7 +259,7 @@ begin
     index := (Sender as TComboBox).Tag;
     FilterList[index].TypeBox.Items.Clear;
     FilterList[index].TypeBox.Items.AddStrings(
-      ['>', '<', '=', '<>', 'Содержит', 'Начинается с']);
+      ['>', '<', '=', '<>', 'содержит', 'начинается с']);
     FilterList[index].ValueEdit.OnKeyPress := nil;
   end
   else

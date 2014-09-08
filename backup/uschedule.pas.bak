@@ -139,6 +139,7 @@ type
     procedure InitBtnsData;
     procedure SafeFreeAnNil(Obj: TObject);
     function GetMaxRecCount(ARow: integer): Integer;
+    function GetFiltersHtmlData: string;
   private
     CheckedCount, LastCol, LastRow, CurCol, CurRow, OpenedCol, OpenedRow: integer;
     MousePos: TPoint;
@@ -720,41 +721,57 @@ begin
   end;
 end;
 
+function TScheduleForm.GetFiltersHtmlData: string;
+var
+  i: Integer;
+begin
+  if Length(SFilters.FilterList) = 0 then exit('');
+  Result := '<h2> Фильтры:</h2>';
+  with SFilters do
+  for i := 0 to High(FilterList) do
+    with FilterList[i] do
+    Result += Format('<p> %s %s %s</p>',[FieldNameBox.Caption, TypeBox.Caption,
+      ValueEdit.Caption]);
+end;
+
 function TScheduleForm.GetHtmlString: string;
 var
-  i, j, k, l: Integer;
+  i, j, k, l, n: Integer;
 begin
-   Result := '<!DOCTYPE html>'
+   Result :='<!DOCTYPE html>'
           + '<html>'#10
           + '  <head>'#10
-          + '    <tittle> Расписание </title>'#10
+          + '    <title> Расписание </title>'#10
           + '  </head>'#10
           + '  <body>'#10
+          + GetFiltersHtmlData
           + '    <table cellspacing="5" cellpading="10" border="2">'#10
           + '      <tr>'#10
           + '        <th></th>';
   for i := 0 to XFields.Count - 1 do
-    Result +=
-            '        <th>' + XFields.Value[i] + '</th>'#10;
-  Result += '      </tr>';
+    Result += '<th>' + XFields.Value[i] + '</th>'#10;
+  Result += '</tr>';
   for i := 1 to YFields.Count do begin
-    Result +=
-            '      <tr>'
-          +          '<th rowspan="' + IntToStr(GetMaxRecCount(i)) + '">' +
-                        YFields.Value[i - 1] + '</th>'#10 ;
-    for j := 1 to XFields.Count do begin
-      Result += '  <td valign="top">';
-      for k:= 0 to high(Data[j][i].Records) do begin
-        for l := 0 to high(Data[j][i].Records[k].Fields) do
-          Result += Data[j][i].Records[k].Fields[l].Name + ' : ' +
-            Data[j][i].Records[k].Fields[l].Value + #10#13 + '<br>';
-          Result += '<hr>';
-        end;
-      Result += '  </td>';
-      end;
-    Result +=
-            '      </tr>';
+    n := GetMaxRecCount(i);
+    Result += '<tr>' + '<th rowspan="' + IntToStr(n) + '">' +
+      YFields.Value[i - 1] + '</th>'#10;
+    for j := 0 to n - 1 do begin
+      if j > 1 then result += '<tr>';
+      for k := 1 to XFields.Count do
+        if j <= high(Data[k][i].Records) then begin
+          Result += '<td>';
+          for l := 0 to high(Data[k][i].Records[j].Fields) do begin
+            if ShowFieldNames then
+              Result += Data[k][i].Records[j].Fields[l].Name + ': ';
+            Result + Data[k][i].Records[j].Fields[l].Value + #10 + '<br>';
+          end;
+          Result += '</td>';
+        end
+        else
+          result += '<td></td>';
+        result += '</tr>';
     end;
+  end;
   Result += '    </table>'#10
           + '  </body>'#10
           + '</html>';

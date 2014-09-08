@@ -1,7 +1,7 @@
 object ScheduleForm: TScheduleForm
-  Left = 610
+  Left = 357
   Height = 645
-  Top = 467
+  Top = 500
   Width = 1043
   Caption = 'ScheduleForm'
   ClientHeight = 625
@@ -9,7 +9,7 @@ object ScheduleForm: TScheduleForm
   Menu = ScheduleMenu
   OnCreate = FormCreate
   OnDragOver = FormDragOver
-  LCLVersion = '1.2.2.0'
+  LCLVersion = '1.2.4.0'
   object YFieldBox: TComboBox
     Left = 17
     Height = 23

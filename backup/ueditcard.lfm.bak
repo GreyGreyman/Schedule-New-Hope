@@ -3,6 +3,7 @@ object CardForm: TCardForm
   Height = 333
   Top = 234
   Width = 294
+  BorderStyle = bsSingle
   Caption = 'Карточка'
   ClientHeight = 333
   ClientWidth = 294

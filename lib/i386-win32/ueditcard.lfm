@@ -2,11 +2,11 @@ object CardForm: TCardForm
   Left = 736
   Height = 333
   Top = 234
-  Width = 294
+  Width = 303
   BorderStyle = bsSingle
   Caption = 'Карточка'
   ClientHeight = 333
-  ClientWidth = 294
+  ClientWidth = 303
   Position = poDesktopCenter
   LCLVersion = '1.2.4.0'
   object FieldBox: TScrollBox
@@ -16,7 +16,7 @@ object CardForm: TCardForm
     Left = 0
     Height = 252
     Top = 0
-    Width = 294
+    Width = 303
     HorzScrollBar.Page = 1
     VertScrollBar.Page = 1
     Anchors = [akTop, akLeft, akRight, akBottom]
@@ -32,16 +32,16 @@ object CardForm: TCardForm
     Left = 0
     Height = 81
     Top = 252
-    Width = 294
+    Width = 303
     Anchors = [akLeft, akRight, akBottom]
     ClientHeight = 81
-    ClientWidth = 294
+    ClientWidth = 303
     TabOrder = 1
     object AcceptBtn: TButton
       Left = 1
       Height = 40
       Top = 1
-      Width = 292
+      Width = 301
       Align = alTop
       Caption = 'Применить'
       OnClick = AcceptBtnClick
@@ -51,7 +51,7 @@ object CardForm: TCardForm
       Left = 1
       Height = 40
       Top = 40
-      Width = 292
+      Width = 301
       Align = alBottom
       Caption = 'Отмена'
       OnClick = CancelBtnClick
